@@ -34,11 +34,11 @@ body {
 }
 
 button {
-  padding: 3rem 5rem;
+  padding: 2rem 6rem;
   outline: none;
   border: none;
-  background: red;
-  color: black;
+  background: #47e509;
+  color: #221f1f;
   font-size: 4rem;
   font-weight: bold;
   border-radius: 0.5rem;
@@ -52,15 +52,43 @@ button:active {
 h1 {
   text-align: center;
   margin-top: 8rem;
-  color: red;
+  color: #47e509;
   font-size: 4rem;
 }
 
 h2 {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   text-decoration: underline;
   text-align: center;
-  margin-bottom: 10rem;
-  color: red;
+  color: #47e509;
   font-size: 4rem;
+}
+
+p {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  background: #47e509;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  text-align: center;
+  color: #221f1f;
+  font-size: 2rem;
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 50%;
+  }
+  p {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
 }
 /*# sourceMappingURL=style.css.map */

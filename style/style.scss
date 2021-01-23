@@ -1,4 +1,6 @@
 /* Global Style */
+$black: #221f1f;
+$red: #47e509;
 
 * {
   margin: 0;
@@ -25,11 +27,11 @@ body {
 }
 
 button {
-  padding: 3rem 5rem;
+  padding: 2rem 6rem;
   outline: none;
   border: none;
-  background: red;
-  color: black;
+  background: $red;
+  color: $black;
   font-size: 4rem;
   font-weight: bold;
   border-radius: 0.5rem;
@@ -41,14 +43,40 @@ button {
 h1 {
   text-align: center;
   margin-top: 8rem;
-  color: red;
+  color: $red;
   font-size: 4rem;
 }
 
 h2 {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
   text-decoration: underline;
   text-align: center;
-  margin-bottom: 10rem;
-  color: red;
+  color: $red;
   font-size: 4rem;
+}
+p {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  background: $red;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  text-align: center;
+  color: $black;
+  font-size: 2rem;
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 50%;
+  }
+
+  p {
+    right: 50%;
+    transform: translateX(50%);
+  }
 }
