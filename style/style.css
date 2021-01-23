@@ -44,19 +44,24 @@ button {
   border-radius: 0.5rem;
 }
 
-button:active {
+.click {
+  margin-bottom: 2rem;
+}
+
+.click:active {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }
 
 h1 {
   text-align: center;
-  margin-top: 8rem;
+  margin-top: 12rem;
   color: #47e509;
   font-size: 4rem;
 }
 
 h2 {
+  width: 100%;
   position: fixed;
   top: 5%;
   left: 50%;
@@ -68,27 +73,36 @@ h2 {
   font-size: 4rem;
 }
 
-p {
+.p {
   padding: 1rem;
   border-radius: 0.5rem;
   font-weight: bold;
   background: #47e509;
   position: fixed;
   bottom: 2%;
-  right: 2%;
+  right: 1%;
   text-align: center;
   color: #221f1f;
   font-size: 2rem;
+}
+
+.p:active {
+  -webkit-transform: translateX(0%) scale(0.9);
+          transform: translateX(0%) scale(0.9);
 }
 
 @media (max-width: 1000px) {
   html {
     font-size: 50%;
   }
-  p {
+  .p {
     right: 50%;
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
+  }
+  .p:active {
+    -webkit-transform: translateX(50%) scale(0.9);
+            transform: translateX(50%) scale(0.9);
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -27,7 +27,6 @@ body {
 }
 
 button {
-  margin-bottom: 2rem;
   padding: 2rem 6rem;
   outline: none;
   border: none;
@@ -36,6 +35,9 @@ button {
   font-size: 4rem;
   font-weight: bold;
   border-radius: 0.5rem;
+}
+.click {
+  margin-bottom: 2rem;
   &:active {
     transform: scale(0.9);
   }
@@ -43,7 +45,7 @@ button {
 
 h1 {
   text-align: center;
-  margin-top: 8rem;
+  margin-top: 12rem;
   color: $red;
   font-size: 4rem;
 }
@@ -59,17 +61,20 @@ h2 {
   color: $red;
   font-size: 4rem;
 }
-p {
+.p {
   padding: 1rem;
   border-radius: 0.5rem;
   font-weight: bold;
   background: $red;
   position: fixed;
   bottom: 2%;
-  right: 2%;
+  right: 1%;
   text-align: center;
   color: $black;
   font-size: 2rem;
+  &:active {
+    transform: translateX(0%) scale(0.9);
+  }
 }
 
 @media (max-width: 1000px) {
@@ -77,8 +82,11 @@ p {
     font-size: 50%;
   }
 
-  p {
+  .p {
     right: 50%;
     transform: translateX(50%);
+    &:active {
+      transform: translateX(50%) scale(0.9);
+    }
   }
 }
